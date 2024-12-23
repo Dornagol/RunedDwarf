@@ -1,14 +1,32 @@
-# Sample Hardhat Project
+# RunedDwarf Token (RDW)
+A simple ERC-20 token with pause and mint functionality built on Ethereum.
+Overview
+RunedDwarf (RDW) is an ERC-20 token with:
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+## Initial supply: 1,000,000 RDW
+- Pausable transfers for security
+- Minting capabilities
+- Permit functionality for gasless approvals
 
-Try running some of the following tasks:
+## Smart Contract
+The token is deployed on Sepolia testnet: [Contract Address]
+Main Features
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
-# RunedDwarf
+- pause(): Freeze all token transfers (owner only)
+- unpause(): Resume token transfers (owner only)
+- mint(address to, uint256 amount): Create new tokens (owner only)
+
+## Standard Functions
+
+- Transfer tokens between addresses
+- Check token balances
+- Approve and transferFrom operations
+
+## Built With
+
+- Solidity
+- OpenZeppelin Contracts
+- Hardhat
+
+## License
+MIT License
