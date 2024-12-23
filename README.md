@@ -26,7 +26,7 @@ Main Features
 ## Built With
 
 - Solidity
-- OpenZeppelin Contracts
+- Javascript
 - Hardhat
 
 ## License
